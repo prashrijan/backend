@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Page</title>
+    <title>Create Account</title>
     <style>
       * {
         margin: 0;
@@ -20,7 +20,7 @@
         background: linear-gradient(135deg, #6a11cb, #2575fc);
       }
 
-      .login-container {
+      .create-account-container {
         background: #fff;
         padding: 30px;
         border-radius: 10px;
@@ -30,13 +30,13 @@
         text-align: center;
       }
 
-      .login-container h1 {
+      .create-account-container h1 {
         font-size: 24px;
         margin-bottom: 20px;
         color: #333;
       }
 
-      .login-container input {
+      .create-account-container input {
         width: 100%;
         padding: 10px;
         margin: 10px 0;
@@ -45,13 +45,13 @@
         font-size: 16px;
       }
 
-      .login-container input:focus {
+      .create-account-container input:focus {
         outline: none;
         border-color: #2575fc;
         box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
       }
 
-      .login-container button {
+      .create-account-container button {
         background: #6a11cb;
         color: #fff;
         padding: 12px 20px;
@@ -63,11 +63,11 @@
         width: 100%;
       }
 
-      .login-container button:hover {
+      .create-account-container button:hover {
         background: #2575fc;
       }
 
-      .login-container a {
+      .create-account-container a {
         display: block;
         margin-top: 15px;
         color: #2575fc;
@@ -75,33 +75,33 @@
         font-size: 14px;
       }
 
-      .login-container a:hover {
+      .create-account-container a:hover {
         text-decoration: underline;
       }
     </style>
   </head>
   <body>
-    <div class="login-container">
-      <h1>Login</h1>
-      <form method="POST" action="login">
+    <div class="create-account-container">
+      <h1>Create Account</h1>
+      <form action="/register" method="post">
+        <input type="text" placeholder="Full Name" name="fullName" required />
+        <input type="email" placeholder="Email" name="email" required />
+        <input type="text" placeholder="Username" name="username" required />
         <input
-          type="text"
-          name="username"
-          id="username"
-          placeholder="Username"
+          type="password"
+          placeholder="Password"
+          name="password"
           required
         />
         <input
           type="password"
-          name="password"
-          id="password"
-          placeholder="Password"
+          placeholder="Confirm Password"
+          name="confirmPassword"
           required
         />
-        <button type="submit">Login</button>
+        <button type="submit">Sign Up</button>
       </form>
-      <a href="/forgotPassword">Forgot Password?</a>
-      <a href="/register">Create an Account</a>
+      <a href="/">Already have an account? Login</a>
     </div>
   </body>
 </html>
