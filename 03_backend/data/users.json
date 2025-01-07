@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "email": "prashrijanshrestha@gmail.com",
+    "userName": "prashrijanshrestha",
+    "password": "565678",
+    "fullName": "Prashrijan Shrestha"
+  },
+  {
+    "id": 2,
+    "fullName": "John Doe",
+    "email": "ramdhimal@gmail.com",
+    "userName": "ram",
+    "password": "12345"
+  },
+  {
+    "id": 3,
+    "fullName": "Shubik Bhatt",
+    "email": "ramdhimal@gmail.com",
+    "userName": "ShubikB",
+    "password": "12345"
+  },
+  {
+    "id": 3,
+    "fullName": "Shubik Bhatt",
+    "email": "shubikbhatt@gmail.com",
+    "userName": "ShubikB",
+    "password": "12345"
+  },
+  {
+    "id": 6,
+    "fullName": "Shubik Bhatt 2",
+    "email": "bhattshubik@gmail.com",
+    "username": "shubikbhatt2",
+    "password": "0090909"
+  }
+]
