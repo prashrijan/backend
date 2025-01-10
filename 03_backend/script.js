@@ -2,6 +2,9 @@ import express from "express";
 import path from "path";
 import fs from "fs-extra";
 import usersData from "./data/users.json" assert { type: "json" };
+import connectDb from "./db.js";
+
+connectDb();
 
 const rootDirectory = path.resolve();
 
